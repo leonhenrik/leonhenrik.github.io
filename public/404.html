@@ -6,10 +6,9 @@
     <script>
       // GitHub Pages SPA redirect: forward the requested path to index.html
       // so react-router can pick up routing client-side.
-      var basePath = '/personal-website'
-      var path = location.pathname.slice(basePath.length) || '/'
+      var path = location.pathname || '/'
       sessionStorage.setItem('spa-redirect', path + location.search + location.hash)
-      location.replace(basePath + '/')
+      location.replace('/')
     </script>
   </head>
   <body></body>

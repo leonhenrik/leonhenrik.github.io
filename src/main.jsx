@@ -12,7 +12,7 @@ if (redirect) {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/personal-website">
+    <BrowserRouter>
       <App initialPath={redirect} />
     </BrowserRouter>
   </StrictMode>,
