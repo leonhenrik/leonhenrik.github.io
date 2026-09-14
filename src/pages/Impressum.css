@@ -1,0 +1,30 @@
+.impressum {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.impressum h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.impressum section {
+  margin-bottom: 1.75rem;
+}
+
+.impressum h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.impressum p {
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0.15rem 0;
+}
