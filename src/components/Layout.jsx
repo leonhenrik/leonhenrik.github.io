@@ -144,7 +144,7 @@ export default function Layout({ children }) {
 
       <footer className="footer">
         <p>
-          &copy; {new Date().getFullYear()} Leon Thiel. Built with curiosity.
+          &copy; {new Date().getFullYear()} Leon Thiel. Built with Microsoft Paint.
           {' · '}
           <NavLink to="/impressum" className="footer-link">Impressum</NavLink>
         </p>

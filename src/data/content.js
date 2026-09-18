@@ -130,8 +130,6 @@ export const cvData = {
   skills: [
     'Python', 'pandas', 'PyTorch', 'Machine Learning', 'Data Science',
     'JavaScript', 'TypeScript', 'React', 'R',
-    'AI Policy', 'Responsible AI', 'NLP',
-    'Photography', 'Music Production', 'Piano', 'Drums', 'Guitar',
   ],
 }
 
