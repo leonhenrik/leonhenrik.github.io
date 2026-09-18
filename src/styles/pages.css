@@ -924,3 +924,246 @@
     gap: 0.75rem;
   }
 }
+
+.home {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 68px - 120px);
+  overflow: hidden;
+  isolation: isolate;
+  margin: -3rem -2rem;
+}
+
+
+/* =========================================================
+   CAMBRIDGE BACKGROUND
+   ========================================================= */
+
+.home-background {
+  position: fixed;
+  z-index: -2;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.home-background-image {
+  position: absolute;
+
+  /*
+   * Fill the full screen width and height.
+   * Crop vertically as needed.
+   */
+  width: 100%;
+  height: 100vh;
+
+  /*
+   * Crop to cover the full viewport.
+   */
+  object-fit: cover;
+
+  /*
+   * Center the image.
+   */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.02);
+
+  filter:
+    blur(3px)
+    brightness(0.58);
+}
+
+
+/* Dark overlay */
+
+.home-background-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 12, 18, 0.72) 0%,
+      rgba(8, 12, 18, 0.48) 50%,
+      rgba(8, 12, 18, 0.38) 100%
+    );
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.home-hero {
+  position: relative;
+
+  width: 100%;
+  max-width: 1250px;
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+
+  gap: 80px;
+
+  padding: 80px 60px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEON
+   ========================================================= */
+
+.home-photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+
+/*
+ * Completely remove the old "card".
+ */
+
+.home-photo-frame {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+/*
+ * Transparent PNG.
+ */
+
+.home-photo {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 500px;
+  max-height: 75vh;
+
+  background: transparent;
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  object-fit: contain;
+}
+
+
+/* Remove old image overlay */
+
+.home-photo-overlay {
+  display: none;
+}
+
+
+/* Caption */
+
+.home-photo-caption {
+  margin-top: 14px;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.home-eyebrow {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.home-name {
+  color: #fff;
+}
+
+.home-bio {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.home-role-pill {
+  color: rgba(255, 255, 255, 0.95);
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.cta-primary {
+  background: #fff;
+  color: #111;
+}
+
+.cta-secondary {
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.35);
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    padding: 60px 30px;
+  }
+
+  .home-photo {
+    max-width: 360px;
+    max-height: 60vh;
+  }
+
+  .home-background-image {
+    /*
+     * On mobile, keep the entire photograph visible
+     * rather than aggressively cropping it.
+     */
+    width: 100%;
+    height: auto;
+  }
+}

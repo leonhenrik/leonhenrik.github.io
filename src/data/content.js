@@ -319,22 +319,6 @@ export const songs = [
 
 export const initiatives = [
   {
-    title: 'Mapping Discourse: Legitimation Strategies in Media Coverage of AI',
-    authors: 'Leon Thiel, Jana Diesner',
-    year: '2025',
-    venue: 'ACM FAccT Conference',
-    description: 'An analysis of how media discourse frames AI legitimacy through strategic narratives. Combines NLP techniques with network analysis to identify actors and their legitimation strategies across different media outlets.',
-    tags: ['AI Policy', 'NLP', 'Discourse Analysis', 'Media Studies'],
-  },
-  {
-    title: 'Human-Centered AI Administration: Designing Systems for Public Sector Decision Support',
-    authors: 'Leon Thiel, Jana Diesner, et al.',
-    year: '2024',
-    venue: 'AI & Society',
-    description: 'Framework for designing AI systems that support administrative decision-making while maintaining human agency. Case studies from UN humanitarian operations.',
-    tags: ['AI Governance', 'Human-Centered Design', 'Public Administration'],
-  },
-  {
     title: 'Private Equity Misconduct Prediction: Machine Learning Approaches to Corporate Risk',
     authors: 'Leon Thiel',
     year: '2024',
