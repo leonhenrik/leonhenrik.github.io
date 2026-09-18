@@ -1,7 +1,7 @@
 export const profile = {
-  name: 'Leon Henrik Thiel',
+  name: 'Leon Thiel',
   tagline: 'Data Scientist · AI Researcher · Music Producer',
-  bio: `Grad Student & Researcher focussing on geopolitical applications and impliations of artificial intelligence. Reach out for collaboration or discussion!`,
+  bio: `Grad Student & Researcher focussing on geopolitical applications and impliations of artificial intelligence. Reach out for discussion, collaboration or songwriting sessions!`,
   location: 'Cambridge, United Kingdom',
   email: 'lht30@cam.ac.uk',
   github: 'leonhenrik',
@@ -357,14 +357,26 @@ export const boardGames = [
 
 export const blogPosts = [
   {
-    slug: 'on-creative-constraints',
-    title: 'On Creative Constraints',
-    subtitle: 'Why limitation is the best collaborator',
-    date: 'April 12, 2026',
-    readTime: '5 min read',
-    tags: ['creativity', 'process', 'writing'],
+    slug: 'the-ballon-dor-fallacy',
+    title: 'The Ballon D\'Or Fallacy',
+    subtitle: 'Evaluating on Achievement vs. Skill, and its issue for educational equality',
+    date: 'September 18, 2026',
+    tags: ['society', 'career', 'applications'],
     excerpt: "",
-    content: ``,
+    content: `As a semi-chronically online person, everyone is bound to stumble upon a significant part of the online & offline discourse about who is the "GOAT" (acronym for "Greatest Of All Time") Football player. A large part of the discourse participants tend to agree that the final debate boils down to two candidates, namely Cristiano Ronaldo (Now at Al Nassr, I think), and Lionel Messi (Inter Miami). There are several arguments in favor of each one of them: Messi is a better playmaker, Ronaldo has scored more spectacular goals, and represents more of an intense work ethic within the sport – (and so on, I’m not to well-versed on any technical details). However, one reoccurring argument has always bugged me, and I think this fallacy is central to self-perpetuating inequality of opportunity in education and careers.
+The Ballon D’Or, awarded by France Football and a jury of experts and football players annually, is presented to the best footballer (whatever that may mean) within any given year. The best players in history have won a couple, while Ronaldo and Messi represent an anomaly here: Ronaldo has won five Ballon d’Ors, and Messi has a staggering eight Ballon d’Ors to his name. Yes, that is an incredible achievement.
+However, this is where the problem comes into play. Comparing two candidates (in this case, Ronaldo and Messi) on the basis of something they have been awarded for their skill, instead of comparing them based on their skills, introduces infinite confounding variables. Mood of the Jury, composition of the Jury, maybe even favours between clubs and players, and the the ever-so-annoying principle of “The Winner Takes it all”, where a close second is awarded the same as the last placed person, therefore making statistical comparisons meaningless. 
+
+If you’re following this far, that then to me means, that the argument “Messi is the better player, as he has more Ballon d’Ors, is a completely meaningless statement, as the basis of measurement for this award (his actual footballing skill) is also known and visible to declarant, who could make a more meaningful statement by comparing her or his perception of the actual footballing talent put into play.
+Okay, enough rambling about football; I think the bridge to career capital or educational attainment is clear. Too often, people are evaluated based on achievements, not on undiluted skill. If a selection committee has access to the underlying evidence of merit, relying heavily on previous selection outcomes creates a feedback loop in which past recognition becomes evidence for future skill – meaning, the same performance is evaluated twice (or perpetually and recursively, causing weird upward cycles).
+
+If a person holds e.g. a scholarship, they are seen way more favorably for another scholarship application, which – yes, of course the selection of another Jury can be seen as a stamp of approval – however, as the data or performance that this decision is based on informations accessible to the current decision body, in form of grades, social commitment etc. making an own judgement, without letting prior awards dilute the view, would be the way towards reducing inequality in the process. 
+
+Across fellowships, scholarships, and extracurricular programs, this feedback loop causes young people to start to get “passed around”, basically in a circle, bumping into the same people, as a grand number of admission committees favor prior “stamps of approval” highly. Of course, those awards often do hold meaning – there is no denying that.
+However, for students, realizing that in this attention economy, signals like that may be the path to further reward, this can lead to very misaligned incentives, as taking time to properly work on a project, and do the “invisible work” is rewarded less than striving for certain signals and has a lower perceived return on time investment. Having gone through some fellowships like that and feeling those misaligned incentives myself, I am concerned about the long-term effects of this A) for individual motivation, and time spent on meaningful work vs. working on attaining external reward. B) In the grand scheme of things, I see a big issue in the diminishing returns caused by repeated investments into a small subset of the student population, instead of dispersing chances more broadly.
+
+After all, while awards surely feel cool, in the end, they are fancy noise. It’s very worth it to look beyond and to not further give a rise to credential-chasing-game as it is overly apparent in the US.
+`,
   },
 ]
 

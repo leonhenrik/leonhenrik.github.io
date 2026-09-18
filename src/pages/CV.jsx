@@ -17,7 +17,6 @@ export default function CV() {
   return (
     <motion.div variants={stagger} initial="hidden" animate="show">
       <motion.div className="cv-hero" variants={fadeUp}>
-        <div className="cv-avatar">LT</div>
         <div className="cv-intro">
           <h1>{profile.name}</h1>
           <div className="tagline">{profile.tagline}</div>
