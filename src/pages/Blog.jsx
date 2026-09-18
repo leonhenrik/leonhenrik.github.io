@@ -40,7 +40,7 @@ export default function Blog() {
         transition={{ duration: 0.4 }}
       >
         <h1>Thoughts</h1>
-        <p className="subtitle">Essays on creativity, technology, and the things in between.</p>
+        <p className="subtitle">Unstructured notes on anything I deem noteworthy to ramble about. All positions are my own.</p>
         <div className="accent-line" />
       </motion.div>
 

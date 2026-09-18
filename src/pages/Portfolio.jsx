@@ -39,7 +39,7 @@ export default function Portfolio() {
         transition={{ duration: 0.4 }}
       >
         <h1>Portfolio</h1>
-        <p className="subtitle">Coding projects, experiments, and things I've built.</p>
+        <p className="subtitle">Coding projects, analyses and other things I've built.</p>
         <div className="accent-line" />
       </motion.div>
 

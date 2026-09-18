@@ -28,7 +28,7 @@ export default function Home() {
           transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
         >
           <div className="home-photo-frame">
-            <img src="/Image.jpeg" alt="Leon Thiel" className="home-photo" />
+            <img src="/leon.png" alt="Leon Thiel" className="home-photo" />
             <div className="home-photo-overlay" />
           </div>
           <div className="home-photo-caption">
