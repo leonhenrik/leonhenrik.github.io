@@ -44,7 +44,7 @@ export default function Home() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.4, 0, 0.2, 1] }}
         >
           <div className="home-eyebrow">Hello, I'm</div>
-          <h1 className="home-name"><span className="home-first-name">Leon</span><br /><span className="home-last-name">Thiel</span></h1>
+          <h1 className="home-name"><span className="home-first-name">Leon</span><br /><span className="home-last-name">Thiel<img src="/notes.png" alt="" className="home-notes-decoration" aria-hidden="true" /></span></h1>
 
           <div className="home-roles">
             {roles.map((role, i) => (

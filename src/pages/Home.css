@@ -4,12 +4,36 @@
 
 /* ─── Hero ─── */
 .home-hero {
+  position: relative;
   display: grid;
   grid-template-columns: 420px 1fr;
   gap: 4rem;
   align-items: center;
   min-height: calc(100vh - 64px - 6rem);
   padding-bottom: 3rem;
+}
+
+/* ─── Notes decoration ───
+   Anchored to the "Thiel" last name; adjust top/left to place it. */
+.home-notes-decoration {
+  position: absolute;
+  top: -60px;
+  left: calc(100% + 12px);
+  width: 160px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  animation: notes-float 4s ease-in-out infinite;
+}
+
+@keyframes notes-float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+[data-theme='dark'] .home-notes-decoration {
+  filter: invert(1);
 }
 
 /* ─── Photo column ─── */
@@ -113,6 +137,7 @@
 }
 
 .home-last-name {
+  position: relative;
   display: inline-block;
 }
 
