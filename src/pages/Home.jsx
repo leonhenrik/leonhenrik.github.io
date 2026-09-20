@@ -4,13 +4,17 @@ import { useEffect, useState } from 'react'
 import { profile } from '../data/content'
 import './Home.css'
 
-const roles = ['data scientist', 'ai researcher', 'musician', 'producer', 'board game developer']
+const roles = ['data scientist', 'ai researcher', 'musician', 'producer']
 
 export default function Home() {
   const [mouse, setMouse] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 800px)')
+
     const handleMouseMove = (e) => {
+      if (mediaQuery.matches) return
+
       const x = (e.clientX / window.innerWidth - 0.5) * 2
       const y = (e.clientY / window.innerHeight - 0.5) * 2
 
