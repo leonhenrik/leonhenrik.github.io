@@ -923,6 +923,15 @@
     flex-direction: column;
     gap: 0.75rem;
   }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .link-card {
+    padding: 1rem 1.25rem;
+    gap: 1rem;
+  }
 }
 
 .home {
