@@ -94,6 +94,7 @@
 }
 
 .blog-post-header {
+  max-width: 680px;
   margin-bottom: 2.5rem;
 }
 
@@ -166,6 +167,30 @@
   border-radius: 2px;
   margin: 1.5rem 0;
   border: none;
+}
+
+.blog-post-content {
+  display: block;
+}
+
+.blog-post-aside {
+  display: none;
+}
+
+.blog-post-cover {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  background: var(--bg-secondary);
+  box-shadow: var(--shadow-md);
+}
+
+.blog-post-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 .blog-post-body {

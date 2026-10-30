@@ -361,6 +361,10 @@ export const blogPosts = [
     title: 'The Ballon D\'Or Fallacy',
     subtitle: 'Evaluating on Achievement vs. Skill, and its issue for educational equality',
     date: 'September 18, 2026',
+    coverImage: {
+      url: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1440&q=85',
+      alt: 'A football resting on a pitch',
+    },
     tags: ['society', 'career', 'applications'],
     excerpt: "",
     content: `As a semi-chronically online person, everyone is bound to stumble upon a significant part of the online & offline discourse about who is the "GOAT" (acronym for "Greatest Of All Time") Football player. A large part of the discourse participants tend to agree that the final debate boils down to two candidates, namely Cristiano Ronaldo (Now at Al Nassr, I think), and Lionel Messi (Inter Miami). There are several arguments in favor of each one of them: Messi is a better playmaker, Ronaldo has scored more spectacular goals, and represents more of an intense work ethic within the sport – (and so on, I’m not to well-versed on any technical details). However, one reoccurring argument has always bugged me, and I think this fallacy is central to self-perpetuating inequality of opportunity in education and careers.
@@ -383,6 +387,10 @@ After all, while awards surely feel cool, in the end, they are fancy noise. It�
     title: 'AI would Defeat All Of Us Combined (if we were still around at that point)',
     subtitle: 'Brief reaction to “AI Could Defeat All Of Us Combined” by Holden Karnofsky',
     date: 'October 18, 2026',
+    coverImage: {
+      url: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1440&q=85',
+      alt: 'Close-up of a computer circuit board',
+    },
     tags: ['ai', 'existence', 'risk'],
     excerpt: "",
     sourceArticle: {

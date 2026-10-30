@@ -52,10 +52,19 @@ export default function BlogPost() {
         <hr className="blog-post-divider" />
       </div>
 
-      <div className="blog-post-body">
-        {post.content.split('\n\n').map((para, i) => (
-          <p key={i}>{para}</p>
-        ))}
+      <div className="blog-post-content">
+        <div className="blog-post-body">
+          {post.content.split('\n\n').map((para, i) => (
+            <p key={i}>{para}</p>
+          ))}
+        </div>
+        {post.coverImage && (
+          <aside className="blog-post-aside">
+            <figure className="blog-post-cover">
+              <img src={post.coverImage.url} alt={post.coverImage.alt} />
+            </figure>
+          </aside>
+        )}
       </div>
     </motion.div>
   )
