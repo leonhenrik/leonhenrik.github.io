@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Clock } from 'lucide-react'
+import { ArrowLeft, Clock, ExternalLink } from 'lucide-react'
 import { blogPosts } from '../data/content'
 import '../styles/pages.css'
 import './Blog.css'
@@ -39,6 +39,15 @@ export default function BlogPost() {
             <span className="tag accent" key={i}>{tag}</span>
           ))}
         </div>
+        {post.sourceArticle && (
+          <aside className="blog-source-article">
+            <span>In response to</span>
+            <a href={post.sourceArticle.url} target="_blank" rel="noopener noreferrer">
+              {post.sourceArticle.title}
+              <ExternalLink size={14} aria-hidden="true" />
+            </a>
+          </aside>
+        )}
         <hr className="blog-post-divider" />
       </div>
 

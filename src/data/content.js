@@ -378,6 +378,30 @@ However, for students, realizing that in this attention economy, signals like th
 After all, while awards surely feel cool, in the end, they are fancy noise. It’s very worth it to look beyond and to not further give a rise to credential-chasing-game as it is overly apparent in the US.
 `,
   },
+ {
+    slug: 'ai-would-defeat-us',
+    title: 'AI would Defeat All Of Us Combined (if we were still around at that point)',
+    subtitle: 'Brief reaction to “AI Could Defeat All Of Us Combined” by Holden Karnofsky',
+    date: 'October 18, 2026',
+    tags: ['ai', 'existence', 'risk'],
+    excerpt: "",
+    sourceArticle: {
+      title: 'AI Could Defeat All Of Us Combined',
+      url: 'https://www.cold-takes.com/ai-could-defeat-all-of-us-combined/',
+    },
+    content: `I would argue that detrimental effects of AI may arrive well before any rogue, malicious AI. Karnofsky points out, “Human civilization  is pretty powerful and seems pretty robust”; As someone who was influenced by Golding’s “Lord of the Flies” at a (probably too) young age, I am more inclined to believe that the veneer of civilization is very thin. Whether AI could defeat all of us is therefore of secondary importance to me; I fear societal collapse before.
+
+Societal structure is built on the fact that no individual holds exhaustive skills or knowledge. Co-dependence forces cooperation, and cooperation produced democracy, labor unions, and, at least conceptually, mitigated the risk of a permanent underclass. As Karnofsky describes it, AI will be seen as a population of cheaper, highly skilled individuals accessing the internet from another planet – How fast would we transfer our resources, jobs, etc.? When skill and intelligence become procurable commodities, and increased computing capabilities and collective cognitive offloading concentrate them in the hands of a few, human cooperation breaks. 
+
+Enter a vicious cycle in which people with diminished bargaining power and societal roles further dissociate from societal structures. With a lower stake in the remaining institutions and economic systems, the resulting loss of shared belief might trigger rogue human agents before any rogue AI. If AI excels in a critical mass of domains, the existential question of our purpose will inevitably catalyze such societal erosion.
+
+Lastly, we are heading into an epistemic crisis about trust, information and ownership. Recently, the video-call agent “Griffin” almost passed the Turing Test; traditional methods of human verification are no longer viable. New models can reverse-engineer software from binaries, eroding the long standing concept of “security by obscurity” and risking unprecedented waves of breaches and insolvencies in the tech sector.
+
+Karnofsky treats those points as secondary concerns. I, however, am particularly concerned about the dangers of AI that arise while we cannot solve the coordination problem (which I would expect to become easier when a common enemy, a rogue AI is trying to take down society). Until then, the danger of defecting AI firms or countries makes rushed development and implementation individually rational strategy, leading to a suboptimal equilibrium in this Prisoner’s Dilemma, although a coordinated slowdown would be desirable.
+But yes, Karnofsky has a point: maybe AI will go rogue afterward.
+`
+
+  },
 ]
 
 export const links = [
