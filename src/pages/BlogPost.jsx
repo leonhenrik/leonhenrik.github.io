@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowLeft, Clock, ExternalLink } from 'lucide-react'
 import { blogPosts } from '../data/content'
+import { getReadingTime } from '../utils/readingTime'
 import '../styles/pages.css'
 import './Blog.css'
 
@@ -29,7 +30,7 @@ export default function BlogPost() {
           <span>·</span>
           <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
             <Clock size={12} />
-            {post.readTime}
+            {getReadingTime(post.content)}
           </span>
         </div>
         <h1>{post.title}</h1>

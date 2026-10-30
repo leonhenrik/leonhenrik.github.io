@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { Clock, Search } from 'lucide-react'
 import { blogPosts } from '../data/content'
+import { getReadingTime } from '../utils/readingTime'
 import '../styles/pages.css'
 import './Blog.css'
 
@@ -17,13 +18,14 @@ const fadeUp = {
 }
 
 const allTags = ['All', ...Array.from(new Set(blogPosts.flatMap(p => p.tags)))]
+const postsByDate = [...blogPosts].sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
 
 export default function Blog() {
   const [query, setQuery] = useState('')
   const [activeTag, setActiveTag] = useState('All')
 
   const filtered = useMemo(() => {
-    return blogPosts.filter(post => {
+    return postsByDate.filter(post => {
       const matchesTag = activeTag === 'All' || post.tags.includes(activeTag)
       const q = query.toLowerCase()
       const matchesQuery = !q || post.title.toLowerCase().includes(q) || post.excerpt.toLowerCase().includes(q) || post.tags.some(t => t.toLowerCase().includes(q))
@@ -79,7 +81,7 @@ export default function Blog() {
                 <span className="blog-sep">·</span>
                 <span className="blog-read-time">
                   <Clock size={12} />
-                  {post.readTime}
+                  {getReadingTime(post.content)}
                 </span>
               </div>
               <h2 className="blog-card-title">{post.title}</h2>

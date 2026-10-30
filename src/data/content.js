@@ -398,6 +398,7 @@ Enter a vicious cycle in which people with diminished bargaining power and socie
 Lastly, we are heading into an epistemic crisis about trust, information and ownership. Recently, the video-call agent “Griffin” almost passed the Turing Test; traditional methods of human verification are no longer viable. New models can reverse-engineer software from binaries, eroding the long standing concept of “security by obscurity” and risking unprecedented waves of breaches and insolvencies in the tech sector.
 
 Karnofsky treats those points as secondary concerns. I, however, am particularly concerned about the dangers of AI that arise while we cannot solve the coordination problem (which I would expect to become easier when a common enemy, a rogue AI is trying to take down society). Until then, the danger of defecting AI firms or countries makes rushed development and implementation individually rational strategy, leading to a suboptimal equilibrium in this Prisoner’s Dilemma, although a coordinated slowdown would be desirable.
+
 But yes, Karnofsky has a point: maybe AI will go rogue afterward.
 `
 
