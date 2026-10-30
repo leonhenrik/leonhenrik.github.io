@@ -14,8 +14,60 @@ const fadeUp = {
 }
 
 export default function CV() {
+  const sections = [
+    {
+      title: 'Work Experience',
+      items: cvData.experience.map((item) => ({
+        period: item.period,
+        title: item.role,
+        subtitle: item.company,
+        detail: item.location,
+        description: item.description,
+      })),
+    },
+    {
+      title: 'Research & Teaching',
+      items: cvData.research.map((item) => ({
+        period: item.period,
+        title: item.role,
+        subtitle: item.institution,
+        detail: item.location,
+        description: item.description,
+      })),
+    },
+    {
+      title: 'Education',
+      items: cvData.education.map((item) => ({
+        period: item.period,
+        title: item.degree,
+        subtitle: item.institution,
+        detail: item.location,
+        description: item.description,
+      })),
+    },
+    {
+      title: 'Civic Engagement',
+      items: cvData.civic.map((item) => ({
+        period: item.period,
+        title: item.role,
+        subtitle: item.organisation,
+        detail: item.location,
+        description: item.description,
+      })),
+    },
+    {
+      title: 'Awards & Scholarships',
+      items: cvData.awards.map((item) => ({
+        period: item.period,
+        title: item.title,
+        subtitle: item.body,
+        description: item.description,
+      })),
+    },
+  ]
+
   return (
-    <motion.div variants={stagger} initial="hidden" animate="show">
+    <motion.div className="cv-page" variants={stagger} initial="hidden" animate="show">
       <motion.div className="cv-hero" variants={fadeUp}>
         <div className="cv-intro">
           <h1>{profile.name}</h1>
@@ -35,103 +87,31 @@ export default function CV() {
         </div>
       </motion.div>
 
-      <motion.div variants={fadeUp}>
-        <div className="section-title">Work Experience</div>
-        <div className="timeline">
-          {cvData.experience.map((item, i) => (
-            <div className="timeline-item" key={i}>
-              <div className="timeline-period">{item.period}</div>
-              <div className="timeline-content">
-                <h3>{item.role}</h3>
-                <div className="company">{item.company} &mdash; <span style={{fontWeight:400, color:'var(--text-tertiary)'}}>{item.location}</span></div>
-                {item.description && <p>{item.description}</p>}
-              </div>
+      <motion.div className="cv-sections-grid" variants={fadeUp}>
+        {sections.map((section) => (
+          <section className="cv-section" key={section.title}>
+            <h2 className="cv-section-title">{section.title}</h2>
+            <div className="cv-timeline">
+              {section.items.map((item, i) => (
+                <article className="cv-timeline-item" key={`${item.title}-${i}`}>
+                  <div className="cv-timeline-period">{item.period}</div>
+                  <h3>{item.title}</h3>
+                  {item.subtitle && <div className="cv-timeline-subtitle">{item.subtitle}</div>}
+                  {item.detail && <div className="cv-timeline-detail">{item.detail}</div>}
+                  {item.description && <p>{item.description}</p>}
+                </article>
+              ))}
             </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <hr className="section-divider" />
-
-      <motion.div variants={fadeUp}>
-        <div className="section-title">Research</div>
-        <div className="timeline">
-          {cvData.research.map((item, i) => (
-            <div className="timeline-item" key={i}>
-              <div className="timeline-period">{item.period}</div>
-              <div className="timeline-content">
-                <h3>{item.role}</h3>
-                <div className="company">{item.institution} &mdash; <span style={{fontWeight:400, color:'var(--text-tertiary)'}}>{item.location}</span></div>
-                {item.description && <p>{item.description}</p>}
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <hr className="section-divider" />
-
-      <motion.div variants={fadeUp}>
-        <div className="section-title">Education</div>
-        <div className="timeline">
-          {cvData.education.map((item, i) => (
-            <div className="timeline-item" key={i}>
-              <div className="timeline-period">{item.period}</div>
-              <div className="timeline-content">
-                <h3>{item.degree}</h3>
-                <div className="company">{item.institution} &mdash; <span style={{fontWeight:400, color:'var(--text-tertiary)'}}>{item.location}</span></div>
-                {item.description && <p>{item.description}</p>}
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <hr className="section-divider" />
-
-      <motion.div variants={fadeUp}>
-        <div className="section-title">Civic Engagement</div>
-        <div className="timeline">
-          {cvData.civic.map((item, i) => (
-            <div className="timeline-item" key={i}>
-              <div className="timeline-period">{item.period}</div>
-              <div className="timeline-content">
-                <h3>{item.role}</h3>
-                <div className="company">{item.organisation} &mdash; <span style={{fontWeight:400, color:'var(--text-tertiary)'}}>{item.location}</span></div>
-                {item.description && <p>{item.description}</p>}
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <hr className="section-divider" />
-
-      <motion.div variants={fadeUp}>
-        <div className="section-title">Awards & Scholarships</div>
-        <div className="timeline">
-          {cvData.awards.map((item, i) => (
-            <div className="timeline-item" key={i}>
-              <div className="timeline-period">{item.period}</div>
-              <div className="timeline-content">
-                <h3>{item.title}</h3>
-                <div className="company">{item.body}</div>
-                {item.description && <p>{item.description}</p>}
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <hr className="section-divider" />
-
-      <motion.div variants={fadeUp}>
-        <div className="section-title">Skills & Interests</div>
-        <div className="skills-grid">
-          {cvData.skills.map((skill, i) => (
-            <span className="skill-tag" key={i}>{skill}</span>
-          ))}
-        </div>
+          </section>
+        ))}
+        <section className="cv-section cv-skills-section">
+          <h2 className="cv-section-title">Skills & Interests</h2>
+          <div className="skills-grid">
+            {cvData.skills.map((skill) => (
+              <span className="skill-tag" key={skill}>{skill}</span>
+            ))}
+          </div>
+        </section>
       </motion.div>
     </motion.div>
   )
