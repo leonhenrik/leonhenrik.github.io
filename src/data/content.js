@@ -432,4 +432,10 @@ export const links = [
     description: 'Professional network & CV',
     icon: 'linkedin',
   },
+    {
+    platform: 'Google Scholar',
+    url: 'https://scholar.google.com/citations?user=DPKfxZ4AAAAJ',
+    description: 'Academic publications & citations',
+    icon: 'google-scholar',
+  },
 ]
