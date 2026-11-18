@@ -446,19 +446,19 @@ export const links = [
   {
     platform: 'Spotify',
     url: 'https://open.spotify.com/user/leonthiel',
-    description: 'Music & releases',
+    description: 'Music & releases (a lot there)',
     icon: 'spotify',
   },
   {
     platform: 'LinkedIn',
     url: 'https://linkedin.com/in/leonhenrikthiel',
-    description: 'Professional network & CV',
+    description: 'For serious stuff',
     icon: 'linkedin',
   },
     {
     platform: 'Google Scholar',
     url: 'https://scholar.google.com/citations?user=DPKfxZ4AAAAJ',
-    description: 'Academic publications & citations',
+    description: 'Academic publications (not a lot there lol)',
     icon: 'google-scholar',
   },
 ]

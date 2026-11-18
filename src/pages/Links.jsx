@@ -32,7 +32,7 @@ export default function Links() {
         transition={{ duration: 0.4 }}
       >
         <h1>Links</h1>
-        <p className="subtitle">Other places on the internet where I am (somewhat? More or less.) active!</p>
+        <p className="subtitle">Other locations on the internet where I am (somewhat / More or less) active!</p>
         <div className="accent-line" />
       </motion.div>
 

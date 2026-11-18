@@ -49,14 +49,14 @@ export default function Songs() {
               <div className="songs-identity-label">As an artist</div>
               <div className="songs-identity-name">theon</div>
               <p className="songs-identity-desc">
-                I write and release german indie music under the name <strong>theon</strong> — guitar-driven songs that sit somewhere between singer-songwriter and indie pop. Playing piano, drums, and guitar since I was a kid; writing songs since I could.
+                I write and release german indie music under the name <strong>theon</strong> (Thiel Leon, abbreviated) Have been playing piano since I was a kid, guitar since Covid-19; writing songs and producing music since I knew that that was a thing.
               </p>
             </div>
             <div className="songs-identity-card">
               <div className="songs-identity-label">As a producer</div>
               <div className="songs-identity-name">for others</div>
               <p className="songs-identity-desc">
-                I also produce for other artists, handling arrangement, recording, and mixing. I enjoy collaboration on music as much as the solo work.
+                I also produce for other artists, handling arrangement, recording, and mixing. I love collaboration on music as much as the solo work. Reach out if there is anything I can help with!
               </p>
             </div>
           </div>
